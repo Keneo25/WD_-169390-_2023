@@ -1,5 +1,3 @@
-
-
 def zad1():
     a = input("Wpisz jakies zdanie program policzy spacje:")
     print(a.count(" "));
@@ -57,19 +55,43 @@ def zad7():
 
 
 
+def zad9():
+
+    list = []
+    while list!=0:
+        x = input("Podaj wartosc: ")
+        if x.isdigit():
+            list.append(x)
+            print(list)
+        elif x == "end":
+            print(list)
+            break
 def zad10():
     a = eval(input("Podaj liczbe: "))
-    for i in [1,2,3,4,5,6,7,8,9,10]:
-        if a == 1:
-            print("A")
-            break;
+    if a >0 and a<=10:
+       if a == 1:
+        print("A")
+       elif a==2:
+        print("AA")
+       elif a == 3:
+        print("AAA")
+       elif a == 4:
+        print("AAAA")
+       elif a == 5:
+        print("AAAAA")
+       elif a == 6:
+        print("AAAAAA")
+       elif a == 7:
+        print("AAAAAAA")
+       elif a == 8:
+        print("AAAAAAAA")
+       elif a == 9:
+        print("AAAAAAAAA")
+       elif a == 10:
+        print("AAAAAAAAAA")
 
 
 
 
-
-zad10()
+zad9()
 print("\n")
-
-
-
