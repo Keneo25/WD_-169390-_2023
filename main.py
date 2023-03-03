@@ -1,82 +1,97 @@
-
 def zad1():
-    a = "*" * 20
-    b = "*" * 20
-    c = "*" * 20
-    d = "*" * 20
-    print(a)
-    print(b)
-    print(c)
-    print(d)
+    a = input("Wpisz jakies zdanie program policzy spacje:")
+    print(a.count(" "));
+
 
 def zad2():
-    a = "*" * 20
-    b = "*"
-    c = " "
-    print(a)
-    print(b*1,c*16,b*1)
-    print(b*1,c*16,b*1)
-    print(a)
+    a = "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. " \
+        "Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. " \
+        "Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. " \
+        "Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum," \
+        "a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker"
+    k = a.split()
+    print(k)
+    print(type(a))
 
 
 def zad3():
-    a ="*"
-    print(a)
-    print(a*2)
-    print(a*3)
-    print(a*4)
-
-
+     x = 2
+     a = 4;
+     print(a == x) #return false poniewaz nie sa sobie rowne
+     print(a!=x) #return true poniewaz sa rozne
+     print(a >= x) # return true poniewaz a jest wieksze
+     print(a <= x)  # return false poniewaz a nie jest mniejsze ani rowne
 
 def zad4():
-    a = (512-282)/(47*48+5)
-    print(a)
+    x = eval(input("Podaj liczbe calkowita: ")) #musi byc eval
+    if x < 0:
+        print("Wynik: ",x*-1)
+    else:
+        print("wynik: ",x)
 
 
 def zad5():
-    x =7
-    print(x,"---",x*2,"---",x*3,"---",x*4,"---",x*5)
+    a = eval(input("Podaj a: "))
+    b = eval(input("Podaj b: "))
+    c = eval(input("Podaj c: "))
+    if a >= 0 and a <=10:
+        print("A zawiera sie w przedziale od 0 do 10")
+        if a >b or b >c:
+            print("a jest wieksze od b badz b jest wieksze od c")
+    else:
+        print("A NIE zawiera sie w przedziale od 0 do 10")
 
 
 def zad6():
-    i = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \n" \
-            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\n" \
-            " when an unknown printer took a galley of type and scrambled it to make a type \n" \
-            "specimen book. It has survived not only five centuries, but also the leap into \n" \
-            "electronic typesetting, remaining essentially unchanged. It was popularised in the \n" \
-            " 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more \n" \
-            "recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-    print(i)
+      for i in range(0,51):
+          if i % 5 ==0:
+              print("\n",i)
 
 def zad7():
-    a = eval(input("Wpisz wartosc a"))
-    b = eval(input("Wpisz wartosc b"))
-    c =a *b
-    print("Mnozenie rowna sie: ",c)
+    x = eval(input("Podaj ile liczb: "))
+    for i in  range(0,x):
+        a = eval(input("Podaj "+ str(i+1) +" liczbe: "))
+        print("Kwadrat "+str(a)+" =", a*a)
+
+
+
+def zad9():
+
+    list = []
+    while list!=0:
+        x = input("Podaj wartosc: ")
+        if x.isdigit():
+            list.append(x)
+            print(list)
+        elif x == "end":
+            print(list)
+            break
+def zad10():
+    a = eval(input("Podaj liczbe: "))
+    if a >0 and a<=10:
+       if a == 1:
+        print("A")
+       elif a==2:
+        print("AA")
+       elif a == 3:
+        print("AAA")
+       elif a == 4:
+        print("AAAA")
+       elif a == 5:
+        print("AAAAA")
+       elif a == 6:
+        print("AAAAAA")
+       elif a == 7:
+        print("AAAAAAA")
+       elif a == 8:
+        print("AAAAAAAA")
+       elif a == 9:
+        print("AAAAAAAAA")
+       elif a == 10:
+        print("AAAAAAAAAA")
 
 
 
 
-def zad8():
-    kilo = eval(input("Podaj swoja wage w kg"))
-    funty = kilo *2.2
-    print("Twoja waga w funtach wynosi: ",funty)
-
-
-
-
-zad1()
+zad9()
 print("\n")
-zad2()
-print("\n")
-zad3()
-print("\n")
-zad4()
-print("\n")
-zad5()
-print("\n")
-zad6()
-print("\n")
-zad7()
-print("\n")
-zad8()
