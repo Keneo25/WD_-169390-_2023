@@ -54,6 +54,13 @@ def zad7():
         print("Kwadrat "+str(a)+" =", a*a)
 
 
+def zad8():
+    liczbastr = input("Podaj liczbe: ")
+    suma = 0
+    for x in range(len(liczbastr)):
+        suma = suma + int(liczbastr[x])
+    print(suma)
+
 
 def zad9():
 
@@ -90,8 +97,31 @@ def zad10():
        elif a == 10:
         print("AAAAAAAAAA")
 
+def zad11():
+    x = 0
+    while x < 2 or x > 9:
+        x = eval(input("Podaj liczbe"))
+    if x % 2 == 0:
+        x -= 1
+    liczba = 1
+    spacja = round(x / 2)
+    spadek = 0
+    print("-"*10)
+    for i in range(x):
+        print(" " + spacja + "o" + liczba)
+        if liczba == x:
+            spadek = 1
+        if spadek == 0:
+            liczba += 2
+            spacja -= 1
+        else:
+            liczba -= 2
+            spacja += 1
+    print("-"*10)
 
 
 
-zad9()
+
+
+zad11()
 print("\n")
